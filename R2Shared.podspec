@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "Aferdita Muriqi" => "aferdita.muriqi@gmail.com" }
   s.platform     = :ios
   s.ios.deployment_target = "9.0"
+  s.frameworks = 'Foundation', 'UIKit', 'MobileCoreServices', 'SystemConfiguration'
   s.source       = { :git => "https://github.com/readium/r2-shared-swift.git", :branch => "develop" }
   s.source_files  = "r2-shared-swift/**/*.{m,h,swift}"
   s.exclude_files = ["**/Info*.plist"]
