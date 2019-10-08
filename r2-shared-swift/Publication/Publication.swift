@@ -60,6 +60,8 @@ public class Publication: WebPublication, Loggable {
         return contentLayout(forLanguage: nil)
     }
     
+    public var group: String?
+    
     /// Returns the content layout style for the given language code.
     public func contentLayout(forLanguage language: String?) -> ContentLayoutStyle {
         let language = (language?.isEmpty ?? true) ? nil : language
