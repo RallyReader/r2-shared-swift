@@ -63,6 +63,8 @@ public class Link: JSONEquatable {
     /// The MediaOverlays associated to the resource of the `Link`.
     public var mediaOverlays = MediaOverlays()
     
+    public var group: String?
+    
     
     public init(href: String, type: String? = nil, templated: Bool = false, title: String? = nil, rels: [String] = [], rel: String? = nil, properties: Properties = Properties(), height: Int? = nil, width: Int? = nil, bitrate: Double? = nil, duration: Double? = nil, languages: [String] = [], alternates: [Link] = [], children: [Link] = []) {
         self.href = href
